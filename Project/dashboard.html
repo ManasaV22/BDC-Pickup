@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BDC Pickup Order Items</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>BDC Pickup.com</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">My Orders</a></li>
+					<li><a href="index.html">Signout</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="order-items">
+		<div class="container">
+			<h2>Order Items</h2>
+			<div class="item">
+				<img src="pizza.jpg" alt="Item Image">
+				<div class="item-info">
+					<h3>Pizza</h3>
+					<p>Customize <b>+</b></p>
+					<p>$10.99</p>
+				</div>
+				<div class="add-to-cart">
+					<button onclick="redirectToNewPage()">Add to Cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<img src="taco.jpg" alt="Item Image">
+				<div class="item-info">
+					<h3>Taco</h3>
+					<p>Customize <b>+</b></p>
+					<p>$12.99</p>
+				</div>
+				<div class="add-to-cart">
+					<button onclick="redirectToNewPage()">Add to Cart</button>
+				</div>
+			</div>
+            <div class="item">
+				<img src="sushi.jpg" alt="Item Image">
+				<div class="item-info">
+					<h3>Sushi</h3>
+					<p>Customize <b>+</b></p>
+					<p>$12.99</p>
+				</div>
+				<div class="add-to-cart">
+					<button onclick="redirectToNewPage()">Add to Cart</button>
+				</div>
+			</div>
+			<!-- more items here -->
+		</div>
+	</section>
+    <footer>
+		<p>&copy; 2023 BDC Pickup. All rights reserved.</p>
+	</footer>
+    <script>
+		function redirectToNewPage() {
+			window.location.href = "addCart.html"; // replace "newpage.html" with the URL of the new page
+		}
+	</script>
+</body>
+</html>
